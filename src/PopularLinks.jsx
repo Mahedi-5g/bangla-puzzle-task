@@ -39,20 +39,24 @@ export default function PopularLinks() {
   };
 
   return (
-    <section className="w-full bg-slate-50/50 py-16 px-4">
-      <div className="max-w-5xl mx-auto">
+    <section className="w-full bg-slate-50/50 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 border-t border-gray-100">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100/80 text-indigo-600 font-semibold text-xs tracking-wider uppercase mb-4">
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+            <span>Popular Links</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-[1.15] mb-4">
             Most Popular Links
           </h2>
-          <p className="text-gray-500 text-sm md:text-base mt-2">
+          <p className="text-gray-500 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
             Check out the most clicked links on our platform
           </p>
         </div>
 
         {/* Links List */}
-        <div className="flex flex-col gap-4">
+        <div className="max-w-5xl mx-auto flex flex-col gap-4">
           {linksData.map((item, index) => (
             <div
               key={index}

@@ -2,9 +2,9 @@
 
 export default function HeroBanner() {
   return (
-    <section className="w-full bg-slate-50/50 min-h-screen py-16 px-4 flex flex-col items-center justify-center">
+    <section className="w-full bg-slate-50/50 min-h-[calc(100vh-4.5rem)] py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
       {/* Top Badge */}
-      <div className="inline-flex items-center gap-2 bg-indigo-100/70 px-4 py-1.5 rounded-full text-indigo-600 font-medium text-xs md:text-sm mb-6">
+      <div className="inline-flex items-center gap-2 bg-indigo-100/80 px-4 py-1.5 rounded-full text-indigo-600 font-semibold text-xs tracking-wider uppercase mb-6">
         <svg 
           className="w-4 h-4" 
           fill="none" 
@@ -17,7 +17,7 @@ export default function HeroBanner() {
       </div>
 
       {/* Hero Typography */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
         <h1 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tight leading-tight mb-2">
           Shorten Your URL <br />
           <span className="text-indigo-600">in seconds</span>
@@ -29,7 +29,7 @@ export default function HeroBanner() {
       </div>
 
       {/* Main Card */}
-      <div className="w-full max-w-xl bg-white rounded-3xl shadow-2xl shadow-indigo-100/60 border border-gray-100 p-8 md:p-12 text-center">
+      <div className="w-full max-w-xl bg-white rounded-3xl shadow-2xl shadow-indigo-100/60 border border-gray-100 p-6 sm:p-8 md:p-10 text-center">
         {/* Lock Icon Wrapper */}
         <div className="w-14 h-14 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg 

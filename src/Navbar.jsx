@@ -4,7 +4,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-200 px-6 py-4">
+    <nav className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 px-4 sm:px-6 lg:px-8 py-3.5 transition-all">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Left: Brand Logo */}
@@ -42,7 +42,8 @@ export default function Navbar() {
         <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-gray-600 hover:text-gray-900 focus:outline-none"
+            aria-label="Toggle navigation menu"
+            className="text-gray-600 hover:text-gray-900 focus:outline-none p-1.5 rounded-lg hover:bg-gray-100 transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (

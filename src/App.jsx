@@ -1,5 +1,6 @@
 import HeroBanner from './Banner';
 import Components from './Components';
+import Footer from './Footer';
 import Navbar from './Navbar';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroBanner></HeroBanner>
       <Components></Components>
+      <Footer></Footer>
     </div>
   );
 }
